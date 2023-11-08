@@ -149,8 +149,7 @@ body {
 #main-heading {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 100px;
+    padding-top: 100px;
 }
 
 .main-heading {
@@ -170,8 +169,6 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    position: relative;
-    top: 100px;
 }
 
 .sub-heading {
@@ -185,4 +182,40 @@ body {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+#cards-container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards {
+    width: 260px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom {
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(transparent, #000);
+    transition: all 300ms ease-in-out;
+}
+
+.cards img:hover {
+    cursor: pointer;
+}
+
+.cards:hover .bottom {
+    transform: translateY(-20vh);
+    cursor: pointer;
 }
