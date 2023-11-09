@@ -56,22 +56,23 @@ body {
     letter-spacing: 1px;
     font-weight: 550;
     margin: 0 17px;
-    background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
+    color: #7d3636;
+    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
     background-position: center;
     background-size: cover;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .i-tags i {
     font-size: 1.3rem;
-    background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
+    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
     background-position: center;
     background-size: cover;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .single-nav:hover .a-tags {
@@ -98,12 +99,12 @@ body {
 .single-icon a {
     text-decoration: none;
     color: #8e4141;
-    background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600);
     background-position: center;
     background-size: cover;
     color: transparent;
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .single-icon>a>i {
@@ -192,8 +193,8 @@ body {
 }
 
 .cards {
-    width: 260px;
-    height: 300px;
+    width: 480px;
+    height: 270px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -202,11 +203,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 300ms ease-in-out;
 }
 
 .bottom {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
+    padding: 0 30px;
     background: linear-gradient(transparent, #000);
     transition: all 300ms ease-in-out;
 }
@@ -216,6 +219,59 @@ body {
 }
 
 .cards:hover .bottom {
-    transform: translateY(-20vh);
+    transform: translateY(-30vh);
     cursor: pointer;
+}
+
+.cards:hover img {
+    transform: scale(1.1);
+}
+
+.bottom h1 {
+    position: relative;
+    top: 60%;
+}
+
+.bottom button {
+    position: relative;
+    top: 65%;
+}
+
+.bottom h1 {
+    font-size: 1.7rem;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bottom button {
+    font-size: 1.05rem;
+    padding: 9px 17px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: #00000039;
+    transition: all 200ms ease-in-out;
+}
+
+.bottom button::after {
+    content: '';
+    color: white;
+    position: relative;
+    left: -6%;
+}
+
+.bottom button:hover {
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bottom button:active {
+    transform: scale(0.7);
+}
+
+.bottom button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
