@@ -195,8 +195,9 @@ body {
 .cards {
     width: 480px;
     height: 270px;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 0 4px 3px #8e4141;
 }
 
 .cards img {
@@ -252,21 +253,32 @@ body {
     transition: all 200ms ease-in-out;
 }
 
-.bottom button::after {
-    content: '';
-    color: white;
-    position: relative;
-    left: -6%;
+.bottom button::before {
+    content: "";
+    background: #8e4141;
+    width: 0;
+    height: 39px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    opacity: 0;
+    z-index: -1;
+    transition: 200ms ease-in-out;
 }
 
 .bottom button:hover {
-    padding: 12px 22px;
     border-radius: 30px;
     cursor: pointer;
 }
 
+.bottom button:hover::before {
+    width: 140px;
+    opacity: 1;
+}
+
 .bottom button:active {
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 
 .bottom button a {
