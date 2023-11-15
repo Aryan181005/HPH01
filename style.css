@@ -9,6 +9,8 @@
 body {
     margin: 0 10px;
     background-color: #f6e1c8;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 *::selection {
@@ -17,7 +19,6 @@ body {
 }
 
 #navbar {
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +26,10 @@ body {
 }
 
 #logo img {
-    /* background-color: WHITE; */
     width: 9vw;
 }
 
 #nav-links {
-    /* background-color: white; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -57,22 +56,10 @@ body {
     font-weight: 550;
     margin: 0 17px;
     color: #7d3636;
-    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
-    background-position: center;
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; */
 }
 
 .i-tags i {
     font-size: 1.3rem;
-    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600 );
-    background-position: center;
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; */
 }
 
 .single-nav:hover .a-tags {
@@ -99,12 +86,6 @@ body {
 .single-icon a {
     text-decoration: none;
     color: #8e4141;
-    /* background: url(https://images.pexels.com/photos/3800407/pexels-photo-3800407.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-position: center;
-    background-size: cover;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; */
 }
 
 .single-icon>a>i {
